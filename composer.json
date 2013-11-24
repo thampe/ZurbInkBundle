@@ -18,7 +18,6 @@
         "tijsverkoyen/css-to-inline-styles": "1.*"
         "phpcollection/phpcollection": "dev-master"
     },
-    "minimum-stability": "dev",
     "autoload": {
         "psr-0": {
             "Hampe\\Bundle\\ZurbInkBundle": ""
