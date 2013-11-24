@@ -2,10 +2,10 @@
 Creating email templates is hard.
 This Symfony Bundle provides some help:
 
-* [Zurb Ink](https://github.com/zurb/ink) Integration for awesome and responsive Emails. Checkout the their [documentation](http://zurb.com/ink/docs.php).
-* Use normal CSS-Files for styling, add them via `{{ zurb_ink_styles.add("@YourBundle/Resources/public/css/styles.css") }}`.
+* [Zurb Ink](https://github.com/zurb/ink) Integration for awesome and responsive emails. Checkout the their [documentation](http://zurb.com/ink/docs.php).
+* Use normal CSS files for styling, add them via `{{ zurb_ink_styles.add("@YourBundle/Resources/public/css/styles.css") }}`.
 * Automatic inline styles via the `{% ìnlinestyle %}` tag (powered by [Tijs Verkoyen's CssToInlineStyles](https://github.com/tijsverkoyen/CssToInlineStyles)).
-* Imports your CSS rules also in the html head via `{{ includeStyles(zurb_ink_styles) }}`
+* Imports your CSS rules also in html head via `{{ includeStyles(zurb_ink_styles) }}`
 
 
 ## Installation
