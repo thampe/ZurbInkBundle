@@ -1,0 +1,24 @@
+<table class="row">
+    <tr>
+        <td class="wrapper last">
+
+            <table class="twelve columns">
+                <tr>
+                    <td align="center">
+                        {% block footerInner %}
+                            <center>
+                                <p style="text-align:center;">
+                                    {%block footerLinks %}
+                                    <a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#"><unsubscribe>Unsubscribe</unsubscribe></a>
+                                    {% endblock %}
+                                </p>
+                            </center>
+                        {% endblock %}
+                    </td>
+                    <td class="expander"></td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+</table>

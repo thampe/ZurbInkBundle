@@ -1,0 +1,13 @@
+parameters:
+    zurb_ink.inlinecss.class: TijsVerkoyen\CssToInlineStyles\CssToInlineStyles
+    zurb_ink.inlinecss.twig.class: Hampe\Bundle\ZurbInkBundle\Twig\InlineCssExtension
+
+services:
+    zurb_ink.inlinecss:
+        class: %zurb_ink.inlinecss.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+    zurb_ink.inlinecss.twig:
+        class: %zurb_ink.inlinecss.twig.class%
+        arguments: [@zurb_ink.inlinecss, @file_locator]
+        tags:
+            - { name: twig.extension }

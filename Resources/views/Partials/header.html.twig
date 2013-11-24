@@ -1,0 +1,35 @@
+<table class="row header">
+    <tr>
+        <td class="center" align="center">
+            <center>
+
+                <table class="container">
+                    <tr>
+                        <td class="wrapper last">
+
+                            <table class="twelve columns">
+                                <tr>
+                                    {% block headerInner %}
+                                        <td class="six sub-columns">
+                                            {% block headerColLeft %}
+                                                <img src="http://placehold.it/200x50">
+                                            {% endblock %}
+                                        </td>
+                                        <td class="six sub-columns last" align="right" style="text-align:right; vertical-align:middle;">
+                                            {% block headerColRight %}
+                                                <span class="template-label">HERO</span>
+                                            {% endblock %}
+                                        </td>
+                                        <td class="expander"></td>
+                                    {% endblock %}
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+
+            </center>
+        </td>
+    </tr>
+</table>

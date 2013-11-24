@@ -1,0 +1,71 @@
+<table class="row footer">
+    <tr>
+        <td class="wrapper">
+
+            <table class="six columns">
+                <tr>
+                    <td class="left-text-pad">
+                        {% block socialPanelLeft %}
+                            <h5>Connect With Us:</h5>
+                            {% block socialPanelFacbook %}
+                            <table class="tiny-button facebook">
+                                <tr>
+                                    <td>
+                                        {% block socialPanelFacbookLink %}
+                                        <a href="#">Facebook</a>
+                                        {% endblock %}
+                                    </td>
+                                </tr>
+                            </table>
+                            {% endblock %}
+                            <br>
+                            {% block socialPanelTwitter %}
+                            <table class="tiny-button twitter">
+                                <tr>
+                                    <td>
+                                        {% block socialPanelTwitterLink %}
+                                        <a href="#">Twitter</a>
+                                        {% endblock %}
+                                    </td>
+                                </tr>
+                            </table>
+                            {% endblock %}
+
+                            <br>
+                            {% block socialPanelGPlus %}
+                            <table class="tiny-button google-plus">
+                                <tr>
+                                    <td>
+                                        {% block socialPanelGPlusLink %}
+                                        <a href="#">Google +</a>
+                                        {% endblock %}
+                                    </td>
+                                </tr>
+                            </table>
+                            {% endblock %}
+
+                        {% endblock %}
+                    </td>
+                    <td class="expander"></td>
+                </tr>
+            </table>
+
+        </td>
+        <td class="wrapper last">
+
+            <table class="six columns">
+                <tr>
+                    <td class="last right-text-pad">
+                        {% block contentFooterRight %}
+                            <h5>Contact Info:</h5>
+                            <p>Phone: 408.341.0600</p>
+                            <p>Email: <a href="mailto:hseldon@trantor.com">hseldon@trantor.com</a></p>
+                        {% endblock %}
+                    </td>
+                    <td class="expander"></td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,241 @@
+{% extends 'HampeZurbInkBundle::base.html.twig' %}
+{% block preHtml %}
+    {{ zurb_ink_styles.add("@HampeZurbInkBundle/Resources/public/css/sidebarHero.css") }}
+{% endblock %}
+{% block body %}
+<table class="body">
+<tr>
+<td class="center" align="center" valign="top">
+<center>
+
+{% block header %}
+    {% embed 'HampeZurbInkBundle:Partials:header.html.twig' %}
+        {% block headerColRight %}
+            <span class="template-label">Sidebar Hero</span>
+        {% endblock %}
+    {% endembed %}
+{% endblock %}
+
+
+<br>
+
+<table class="container">
+    <tr>
+        <td>
+            {% block contentTop %}
+            <!-- content start -->
+            <table class="row">
+                <tr>
+                    <td class="wrapper last">
+
+                        <table class="twelve columns">
+                            <tr>
+                                <td>
+                                    {% block contentTopInner %}
+                                    <h1>Welcome, Daneel Olivan</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                    <img width="580" height="300" src="http://placehold.it/580x300">
+                                    {% endblock %}
+                                </td>
+                                <td class="expander"></td>
+                            </tr>
+                        </table>
+
+                        <table class="twelve columns">
+                            <tr>
+                                <td class="panel">
+                                    <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <a href="#">Click it! »</a></p>
+                                </td>
+                                <td class="expander"></td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+            {% endblock %}
+
+            <br>  <!-- Break Tag for row -->
+            {% block contentBottom %}
+            <table class="row">
+                <tr>
+                    {% block contentLeft %}
+                        <td class="wrapper">
+
+                            <table class="six columns">
+                                <tr>
+                                    <td>
+                                        <h2>Hello,<br> Han Fastolfe</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
+                                    </td>
+                                    <td class="expander"></td>
+                                </tr>
+                            </table>
+
+                            <table class="six columns">
+                                <tr>
+                                    <td class="panel">
+                                        <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <a href="#">Click it! »</a></p>
+                                    </td>
+
+                                    <td class="expander"></td>
+                                </tr>
+                            </table>
+
+                            <table class="six columns">
+                                <tr>
+                                    <td>
+                                        <br>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
+
+                                        <table class="button">
+                                            <tr>
+                                                <td>
+                                                    <a href="#">Click Me!</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                    <td class="expander"></td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    {% endblock %}
+                    {% block contentRight %}
+                        <td class="wrapper last">
+
+                            <table class="six columns">
+                                <tr>
+                                    <td class="panel">
+                                        <h6>Header Thing</h6>
+                                        <p>Sub-head or something</p>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">Just a Plain Link &raquo;</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <hr>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">Just a Plain Link &raquo;</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <hr>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">Just a Plain Link &raquo;</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <hr>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">Just a Plain Link &raquo;</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <hr>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">Just a Plain Link &raquo;</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <hr>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">Just a Plain Link &raquo;</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <hr>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <a href="#">Just a Plain Link &raquo;</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="expander"></td>
+                                </tr>
+                            </table>
+
+                            <br>
+
+                            <table class="six columns">
+                                <tr>
+                                    <td class="panel">
+                                        <h6 style="margin-bottom:5px;">Connect With Us:</h6>
+                                        <table class="tiny-button facebook">
+                                            <tr>
+                                                <td>
+                                                    <a href="#">Facebook</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <hr>
+
+                                        <table class="tiny-button twitter">
+                                            <tr>
+                                                <td>
+                                                    <a href="#">Twitter</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <hr>
+
+                                        <table class="tiny-button google-plus">
+                                            <tr>
+                                                <td>
+                                                    <a href="#">Google +</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br>
+                                        <h6 style="margin-bottom:5px;">Contact Info:</h6>
+                                        <p>Phone: <b>408.341.0600</b></p>
+                                        <p>Email: <a href="mailto:hseldon@trantor.com">hseldon@trantor.com</a></p>
+                                    </td>
+                                    <td class="expander"></td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    {% endblock %}
+                </tr>
+            </table>
+            {% endblock %}
+            <br>
+            <br>
+            <!-- Legal + Unsubscribe -->
+            {% block footer %}
+                {% embed 'HampeZurbInkBundle:Partials:footer.html.twig' %}
+
+                {% endembed %}
+            {% endblock %}
+            <!-- container end below -->
+        </td>
+    </tr>
+</table>
+
+</center>
+</td>
+</tr>
+</table>
+{% endblock %}

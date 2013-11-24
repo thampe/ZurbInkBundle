@@ -1,0 +1,141 @@
+{% extends 'HampeZurbInkBundle::base.html.twig' %}
+{% block preHtml %}
+    {{ zurb_ink_styles.add("@HampeZurbInkBundle/Resources/public/css/hero.css") }}
+{% endblock %}
+{% block body %}
+<table class="body">
+<tr>
+<td class="center" align="center" valign="top">
+<center>
+{% block header %}
+    {% embed 'HampeZurbInkBundle:Partials:header.html.twig' %}
+        {% block headerColRight %}
+            <span class="template-label">Hero</span>
+        {% endblock %}
+    {% endembed %}
+{% endblock %}
+<br>
+
+<table class="container">
+    <tr>
+        <td>
+            {% block content %}
+            <!-- content start -->
+            {% block contentTop %}
+            <table class="row">
+                <tr>
+                    <td class="wrapper last">
+
+                        <table class="twelve columns">
+                            <tr>
+                                <td>
+                                    {% block contentTopInner %}
+                                    <h1>Hi, Elijah Baily</h1>
+                                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                                    <img width="580" height="300" src="http://placehold.it/580x300">
+                                    {% endblock %}
+                                </td>
+                                <td class="expander"></td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+            {% endblock %}
+            {% block contentPanel %}
+            <table class="row callout">
+                <tr>
+                    <td class="wrapper last">
+
+                        <table class="twelve columns">
+                            <tr>
+                                {% block contentPanelInner %}
+                                <td class="panel">
+
+                                    <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <a href="#">Click it! »</a></p>
+
+                                </td>
+                                {% endblock %}
+                                <td class="expander"></td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+            {% endblock %}
+            {% block contentBottom %}
+            <table class="row">
+                <tr>
+                    <td class="wrapper last">
+
+                        <table class="twelve columns">
+                            <tr>
+                                <td>
+                                    {% block contentBottomInner %}
+                                    <h3>Title Ipsum <small>This is a note.</small></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    {% endblock %}
+                                </td>
+                                <td class="expander"></td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+            {% endblock %}
+            {% block contentBottomButton %}
+            <table class="row">
+                <tr>
+                    <td class="wrapper last">
+
+                        <table class="three columns">
+                            <tr>
+                                <td>
+
+                                    <table class="button">
+                                        <tr>
+                                            <td>
+                                                {% block contentBottomButtonLink %}
+                                                <a href="#">Click Me!</a>
+                                                {% endblock %}
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </td>
+                                <td class="expander"></td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+            {% endblock %}
+
+            {% block socialBlock %}
+                {% embed 'HampeZurbInkBundle:Partials:socialPanel.html.twig' %}
+
+                {% endembed %}
+            {% endblock %}
+            {% block footer %}
+                {% embed 'HampeZurbInkBundle:Partials:footer.html.twig' %}
+                    {% block footerLinks %}
+                    <a href="#1">Link1</a> | <a href="#2">Link2</a> | <a href="#"><unsubscribe>Unsubscribe</unsubscribe></a>
+                    {%  endblock %}
+                {% endembed %}
+            {% endblock %}
+
+            {% endblock %}
+            <!-- container end below -->
+        </td>
+    </tr>
+</table>
+
+</center>
+</td>
+</tr>
+</table>
+{% endblock %}
