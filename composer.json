@@ -15,7 +15,7 @@
     "require": {
         "php":                      ">=5.3.2",
         "symfony/framework-bundle": ">=2.0.0",
-        "tijsverkoyen/css-to-inline-styles": "dev-master",
+        "tijsverkoyen/css-to-inline-styles": "1.*"
         "phpcollection/phpcollection": "dev-master"
     },
     "minimum-stability": "dev",
