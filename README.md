@@ -39,6 +39,10 @@ If you want to use the zurb ink framework, extend the `HampeZurbInkBundle::base.
         {# html #}
     {% endblock %}
 
+---  
+
+*Note:* If you prefer not to have the CSS-Styles also in the `<head>` of your HTML-Document, you can override the `headStyles`-Block: `{% block headStyles %}{% endblock %}`. Be aware that some CSS-Rules can't be realized with inline-styles, like `:hover`-States or `@media`-Queries (both uesed by ZURB Ink Framework)!
+
 ### Option B: Write your own template from scratch
 
     {# add your styles before the inlinestyle tag #}
