@@ -13,7 +13,7 @@ use \Twig_Compiler;
 
 class InlineCssNode extends Twig_Node{
 
-    public function __construct( $html, $line = 0, $tag = 'inlinesytle')
+    public function __construct($html, $line = 0, $tag = 'inlinesytle')
     {
         parent::__construct(array('html' => $html), array(), $line, $tag);
     }
