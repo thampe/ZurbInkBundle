@@ -11,7 +11,8 @@ namespace Hampe\Bundle\ZurbInkBundle\Twig;
 use \Twig_Node;
 use \Twig_Compiler;
 
-class InlineCssNode extends Twig_Node{
+class InlineCssNode extends Twig_Node
+{
 
     public function __construct($html, $line = 0, $tag = 'inlinesytle')
     {
@@ -34,4 +35,4 @@ class InlineCssNode extends Twig_Node{
         ;
 
     }
-} 
+}
