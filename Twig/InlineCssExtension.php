@@ -12,23 +12,27 @@ use \Twig_Extension;
 use \Twig_SimpleFunction;
 use \PhpCollection\Sequence;
 
-class InlineCssExtension extends Twig_Extension {
+class InlineCssExtension extends Twig_Extension
+{
 
     protected $inlineCss;
 
     protected $fileLocator;
 
 
-    public function __construct($inlineCss, $fileLocator){
+    public function __construct($inlineCss, $fileLocator)
+    {
         $this->inlineCss = $inlineCss;
         $this->fileLocator = $fileLocator;
     }
 
-    public function getName(){
+    public function getName()
+    {
         return "zurb_ink.inlinecss";
     }
 
-    public function getGlobals(){
+    public function getGlobals()
+    {
         return array(
             "zurb_ink_inlinecss" => $this->inlineCss,
             "zurb_ink_locator" => $this->fileLocator,
@@ -36,26 +40,29 @@ class InlineCssExtension extends Twig_Extension {
         );
     }
 
-    public function getFunctions(){
+    public function getFunctions()
+    {
         return array(
             new Twig_SimpleFunction('includeStyles', array($this, 'includeStyles'))
         );
     }
 
-    public function getTokenParsers() {
+    public function getTokenParsers()
+    {
         return array(
             new InlineCssTokenParser()
         );
     }
 
-    public function includeStyles($styles){
+    public function includeStyles ($styles)
+    {
         $locator = $this->fileLocator;
         $style = "";
-        foreach($styles as $styleFile){
+        foreach ($styles as $styleFile) {
             $path = $locator->locate($styleFile);
             $style .= "\n\n".file_get_contents($path);
         }
 
         return $style;
     }
-} 
+}
