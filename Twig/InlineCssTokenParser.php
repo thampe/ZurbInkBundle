@@ -11,16 +11,19 @@ namespace Hampe\Bundle\ZurbInkBundle\Twig;
 use \Twig_Token;
 use \Twig_TokenParser;
 
-class InlineCssTokenParser extends Twig_TokenParser{
+class InlineCssTokenParser extends Twig_TokenParser
+{
 
     protected $fileLocator;
 
     protected $inlineStyles;
 
-    public function __construct(){
+    public function __construct()
+    {
     }
 
-    public function parse(Twig_Token $token) {
+    public function parse(Twig_Token $token)
+    {
         $parser = $this->parser;
         $stream = $parser->getStream();
 
@@ -28,11 +31,12 @@ class InlineCssTokenParser extends Twig_TokenParser{
         $html = $this->parser->subparse(array($this, 'decideEnd'), true);
         $stream->expect(Twig_Token::BLOCK_END_TYPE);
 
-        return new InlineCssNode($html,$token->getLine(), $this->getTag());
+        return new InlineCssNode($html, $token->getLine(), $this->getTag());
 
     }
 
-    public function getTag(){
+    public function getTag()
+    {
         return "inlinestyle";
     }
 
@@ -40,4 +44,4 @@ class InlineCssTokenParser extends Twig_TokenParser{
     {
         return $token->test('endinlinestyle');
     }
-} 
+}
