@@ -66,5 +66,6 @@ If you want to use the zurb ink framework, extend the `HampeZurbInkBundle::base.
         </body>
     </html>
     {% endinlinestyle %}
+    
 ## License
 See the [LICENSE](LICENSE) file for license info (it's the MIT license).
