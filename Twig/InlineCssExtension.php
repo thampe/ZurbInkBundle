@@ -8,6 +8,7 @@
 
 namespace Hampe\Bundle\ZurbInkBundle\Twig;
 
+use Hampe\Bundle\ZurbInkBundle\Service\CssContainer;
 use \Twig_Extension;
 use \Twig_SimpleFunction;
 use \PhpCollection\Sequence;
@@ -36,8 +37,9 @@ class InlineCssExtension extends Twig_Extension
         return array(
             "zurb_ink_inlinecss" => $this->inlineCss,
             "zurb_ink_locator" => $this->fileLocator,
-            "zurb_ink_styles" => new Sequence()
+            "zurb_ink_styles" => new CssContainer()
         );
+
     }
 
     public function getFunctions()

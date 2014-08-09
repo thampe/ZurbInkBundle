@@ -14,10 +14,6 @@ use \Twig_TokenParser;
 class InlineCssTokenParser extends Twig_TokenParser
 {
 
-    protected $fileLocator;
-
-    protected $inlineStyles;
-
     public function __construct()
     {
     }

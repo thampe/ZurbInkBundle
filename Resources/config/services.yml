@@ -1,5 +1,5 @@
 parameters:
-    zurb_ink.inlinecss.class: TijsVerkoyen\CssToInlineStyles\CssToInlineStyles
+    zurb_ink.inlinecss.class: Hampe\Bundle\ZurbInkBundle\Service\InlineCss
     zurb_ink.inlinecss.twig.class: Hampe\Bundle\ZurbInkBundle\Twig\InlineCssExtension
 
 services:

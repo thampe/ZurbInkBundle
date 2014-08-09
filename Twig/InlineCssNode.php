@@ -32,6 +32,7 @@ class InlineCssNode extends Twig_Node
             ->write('$context["zurb_ink_inlinecss"]->setHtml(ob_get_clean());')
             ->write('$context["zurb_ink_inlinecss"]->setCSS($zurbCss);')
             ->write('echo $context["zurb_ink_inlinecss"]->convert();')
+            ->write('$context["zurb_ink_styles"]->removeAll();')
         ;
 
     }
