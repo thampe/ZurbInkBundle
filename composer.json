@@ -1,7 +1,7 @@
 {
     "name":        "hampe/zurb-ink-bundle",
     "type":        "symfony-bundle",
-    "version":     "1.0.8",
+    "version":     "1.0.9",
     "description": "Creating email templates is hard. This Bundle provides help.",
     "keywords":    ["email", "zurb", "ink", "template"],
     "homepage":    "http://github.com/thampe/ZurbInkBundle",
