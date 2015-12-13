@@ -11,7 +11,6 @@ namespace Hampe\Bundle\ZurbInkBundle\Twig;
 use Hampe\Bundle\ZurbInkBundle\Service\CssContainer;
 use \Twig_Extension;
 use \Twig_SimpleFunction;
-use \PhpCollection\Sequence;
 
 class InlineCssExtension extends Twig_Extension
 {
