@@ -10,9 +10,10 @@ namespace Hampe\Bundle\ZurbInkBundle\Twig;
 
 use Hampe\Bundle\ZurbInkBundle\Service\CssContainer;
 use \Twig_Extension;
+use \Twig_Extension_GlobalsInterface;
 use \Twig_SimpleFunction;
 
-class InlineCssExtension extends Twig_Extension
+class InlineCssExtension extends Twig_Extension implements Twig_Extension_GlobalsInterface
 {
 
     protected $inlineCss;
