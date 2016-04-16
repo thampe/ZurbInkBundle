@@ -1,4 +1,4 @@
-# ZurbInkBundle
+# ZurbInkBundle (Foundation for Emails 2 Bundle)
 Creating email templates is hard.
 This Symfony Bundle provides some help:
 
@@ -9,10 +9,22 @@ This Symfony Bundle provides some help:
 
 
 ## Installation
+
 You can install this bundle using composer
 
     composer require hampe/zurb-ink-bundle
 or add the package to your `composer.json` file directly.
+
+Php 5.4 is now required. Make sure your composer.json, does not set the platform to php 5.3.*:
+
+    "config": {
+       "bin-dir": "bin",
+       "platform": {
+           "php": "5.4.0" 
+       }
+    },
+
+
 
 After you have installed the package, you just need to add the bundle to your AppKernel.php file:
 
