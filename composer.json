@@ -1,7 +1,7 @@
 {
     "name":        "hampe/zurb-ink-bundle",
     "type":        "symfony-bundle",
-    "version":     "2.0.0.0-PRERELEASE",
+    "version":     "2.1.0.0",
     "description": "Creating email templates is hard. This Bundle provides help.",
     "keywords":    ["email", "zurb", "ink", "template"],
     "homepage":    "http://github.com/thampe/ZurbInkBundle",
@@ -18,7 +18,7 @@
         "symfony/framework-bundle": ">=2.0.0",
         "twig/twig":                ">=1.23.0",
         "tijsverkoyen/css-to-inline-styles": "1.*",
-        "hampe/inky": ">=1.2.3"
+        "hampe/inky": ">=1.3.5"
     },
     "autoload": {
         "psr-0": {
