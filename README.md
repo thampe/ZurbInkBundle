@@ -1,4 +1,4 @@
-# ZurbInkBundle (Foundation for Emails 2 Bundle)
+# ZurbInkBundle (Foundation for Emails 2)
 Creating email templates is hard.
 This Symfony Bundle provides some help:
 
