@@ -1,6 +1,10 @@
 parameters:
     zurb_ink.inlinecss.class: Hampe\Bundle\ZurbInkBundle\Service\InlineCss
     zurb_ink.inlinecss.twig.class: Hampe\Bundle\ZurbInkBundle\Twig\InlineCssExtension
+    zurb_ink.inky.twig.class: Hampe\Bundle\ZurbInkBundle\Twig\InkyExtension
+    zurb_ink.inky.class: Hampe\Inky\Inky
+    zurb_ink.inky.gridColumns: 12
+    zurb_ink.inky.componentFactories: []
 
 services:
     zurb_ink.inlinecss:
@@ -9,5 +13,13 @@ services:
     zurb_ink.inlinecss.twig:
         class: %zurb_ink.inlinecss.twig.class%
         arguments: ["@zurb_ink.inlinecss", "@file_locator"]
+        tags:
+            - { name: twig.extension }
+    zurb_ink.inky:
+        class:  %zurb_ink.inky.class%
+        arguments: [%zurb_ink.inky.gridColumns%, %zurb_ink.inky.componentFactories%]
+    zurb_ink.inky.twig:
+        class:  %zurb_ink.inky.twig.class%
+        arguments: ["@zurb_ink.inky"]
         tags:
             - { name: twig.extension }

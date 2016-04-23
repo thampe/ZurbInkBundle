@@ -34,10 +34,12 @@ class InlineCssExtension extends Twig_Extension implements Twig_Extension_Global
 
     public function getGlobals()
     {
+        $cssContainer = new CssContainer();
+
         return array(
             "zurb_ink_inlinecss" => $this->inlineCss,
             "zurb_ink_locator" => $this->fileLocator,
-            "zurb_ink_styles" => new CssContainer()
+            "zurb_ink_styles" => $cssContainer
         );
 
     }
