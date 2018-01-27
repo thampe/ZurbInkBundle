@@ -1,3 +1,7 @@
+# This repository is no longer maintained.
+ 
+Issue reports and pull requests will not be attended.
+
 # ZurbInkBundle (Foundation for Emails 2)
 Creating email templates is hard.
 This Symfony Bundle provides some help:
