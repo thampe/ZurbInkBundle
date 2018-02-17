@@ -1,6 +1,6 @@
 # This repository is no longer maintained.
  
-Issue reports and pull requests will not be attended.
+Issue reports and pull requests will not be attended. There seems to be an _active_ fork. You might want to you [this](https://github.com/gremo/ZurbInkBundle) instead. 
 
 # ZurbInkBundle (Foundation for Emails 2)
 Creating email templates is hard.
