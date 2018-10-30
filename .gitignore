@@ -3,5 +3,5 @@
 
 # Ignore Composer Dependencies and Lock File
 # See: https://getcomposer.org/doc/02-libraries.md#lock-file
-/vendor/
+/vendor
 /composer.lock
